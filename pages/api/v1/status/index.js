@@ -1,4 +1,4 @@
-import databese from "../../../../infra/databases.js";
+import databese from "infra/databases.js";
 
 async function status(request, response) {
   const result = await databese.query("SELECT 1 + 1 as sum;");
